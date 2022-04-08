@@ -25,6 +25,9 @@ export default function Home() {
   
   const [pageActive, setPageActive] = useState(1) // what current page active
   const [totalPage, setTotalPage] = useState(1) // total page exist
+
+  // search state declared here, not in search form. so state can be used on "search form" on navbar and "search form" on right side
+  // we can also implement redux for this situation 
   const [searchInput, setSearchInput] = useState('') // search value from input
   const [search, setSearch] = useState('') // search value 
   

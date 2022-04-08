@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { debounce } from "../utilities/debounce";
 import SearchForm from "./SearchForm";
 
-const Navbar = ({ rawFeed, setFilteredFeed, setTotalPage, setPageActive, setSearch, perPage, search, handleSearch, handleRemoveSearch, searchInput, setSearchInput }) => {
+const Navbar = ({ rawFeed, setFilteredFeed, setTotalPage, setPageActive, setSearch, perPage, search, searchInput, setSearchInput }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(false);
   
